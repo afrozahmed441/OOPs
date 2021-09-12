@@ -52,6 +52,7 @@ public:
         cout << "Age: " << this->age << endl;
         cout << "Gender: " << this->gender << endl;
         cout << "Info: "  << this->info << endl;
+        cout << endl;
     }    
 
 };

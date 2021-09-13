@@ -5,6 +5,7 @@
 #include <string>
 using namespace std;
 
+/// we declare a class with class keyword followed by class Name
 class User{
 
     /// These are called attributes
@@ -27,6 +28,8 @@ public:
     User(string name, int userAge, char userGender, string userInfo) {
 
         /// assigning the class properties
+        /// methods that start with set are called setter's
+        /// used to set the data of the attributes.
         setUserName(name);
         setUserAge(userAge);
         setUserGender(userGender);
@@ -65,6 +68,8 @@ private:
 
 /// access modifier
 public:
+    /// methods that start with get are called getter methods
+    /// they are used to get the data of the attributes.
     /// return the userName
     string getUserName(){ return (this->userName); }
     /// return the age of the user

@@ -17,6 +17,10 @@ class User{
 /// The code inside this is public means than object can call this functions
 /// public access modifier
 public:
+    /// This is a special type of member function
+    /// It is called constructor
+    /// constructor is invoked or called when a object is created 
+    /// It is useful to initalize the object properties when a object is created.
     User(string name, int userAge, char userGender, string userInfo) {
 
         /// assigning the class properties

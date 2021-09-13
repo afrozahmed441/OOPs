@@ -12,6 +12,10 @@ class User{
     char gender;
     string info;
 
+/// access modifiers 
+/// There are three types of access modifiers Public, Protected, Private (more on this later)
+/// The code inside this is public means than object can call this functions
+/// public access modifier
 public:
     User(string name, int userAge, char userGender, string userInfo) {
 
@@ -23,6 +27,9 @@ public:
 
     }
 
+/// access modifier 
+/// The code inside this is private means that object can't call this functions
+/// private access modifier
 private:
     /// set User name
     void setUserName(string name) {
@@ -48,6 +55,8 @@ private:
     void setUserInfo(string info) {
         this->info = info;
     }
+
+/// access modifier
 public:
     /// return the userName
     string getUserName(){ return (this->userName); }

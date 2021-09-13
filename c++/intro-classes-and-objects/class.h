@@ -7,6 +7,9 @@ using namespace std;
 
 class User{
 
+    /// These are called attributes
+    /// or Data members of the class
+    /// and the functions in the class are called methods or member functions
     string userName;
     int age;
     char gender;

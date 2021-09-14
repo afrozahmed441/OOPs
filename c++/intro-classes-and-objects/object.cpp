@@ -8,6 +8,7 @@ int main(){
     /// array of User pointers
     User *users[size];
 
+    /// Will we create objects we also pass their attributes values in the Parenthesis
     users[0] = new User("Afroz Ahmed Shaik", 21, 'M', "hi i am Afroz");
     users[1] = new User("A", 31, 'F', "");
     users[2] = new User("B", 41, 'M', "" );

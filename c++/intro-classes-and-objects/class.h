@@ -34,7 +34,8 @@ public:
 
     }
     
-    /// display user details
+    /// This is a member function or method 
+    /// The method display's user details
     void display() {
         cout << "Name: " << this->userName << endl;
         cout << "Age: " << this->age << endl;

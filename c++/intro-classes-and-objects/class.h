@@ -16,10 +16,10 @@ class User{
     char gender;
     string info;
 
-/// access modifiers 
-/// There are three types of access modifiers Public, Protected, Private (more on this later)
-/// The code inside this is public means than object can call this functions
-/// public access modifier
+
+/// access modifier
+/// more on the access modifier later (in access-modifier section)
+/// For now just you can assume that code inside this is public 
 public:
     /// This is a special type of member function
     /// It is called constructor
@@ -27,57 +27,12 @@ public:
     /// It is useful to initalize the object properties when a object is created.
     User(string name, int userAge, char userGender, string userInfo) {
 
-        /// assigning the class properties
-        /// methods that start with set are called setter's
-        /// used to set the data of the attributes.
-        setUserName(name);
-        setUserAge(userAge);
-        setUserGender(userGender);
-        setUserInfo(userInfo);
+        userName = name;
+        age = userAge;
+        gender = userGender;
+        info = userInfo;
 
     }
-
-/// access modifier 
-/// The code inside this is private means that object can't call this functions
-/// private access modifier
-private:
-    /// set User name
-    void setUserName(string name) {
-        this->userName = name;
-    }
-    /// set User age
-    void setUserAge(int age) {
-        /// if age is less than or equal to zero then zero 
-        if(age <= 0) this->age = 0;
-        /// else 
-        else this->age = age;
-    }
-    /// set User gender
-    void setUserGender(char g) {
-        /// if gender is one of the M || F || O set the user gender to it
-        if(g == 'M' || g == 'F' || g == 'O') this->gender = g;
-        /// else if gender is one of the m || f || o set the user gender to it
-        else if(g == 'm' || g == 'f' || g == 'o') this->gender = g;
-        /// else N (None)
-        else this->gender = 'N';
-    }
-    /// set User info
-    void setUserInfo(string info) {
-        this->info = info;
-    }
-
-/// access modifier
-public:
-    /// methods that start with get are called getter methods
-    /// they are used to get the data of the attributes.
-    /// return the userName
-    string getUserName(){ return (this->userName); }
-    /// return the age of the user
-    int getUserAge(){ return (this->age); }
-    /// return the gender of the user    
-    char getUserGender() { return (this->gender); }
-    /// return the info of the user
-    string getUserInfo() { return (this->info); }
     
     /// display user details
     void display() {

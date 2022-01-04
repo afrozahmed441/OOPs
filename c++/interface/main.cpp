@@ -38,6 +38,9 @@ public:
         std::cout << this->name << " Current Health : " << this->health << std::endl;
     }
 
+    std::string getName() { return this->name; }
+    int getHealth() { return this->health; }
+
     ~GamePlayer() { }
 
 };

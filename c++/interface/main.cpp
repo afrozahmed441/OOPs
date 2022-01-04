@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 
-/// There is no such thing called interfaces in c++
-/// but we can implement the interfaces using the pure virtual methods.
+/// There is no such thing called interface in c++
+/// but we can implement the interface using the pure virtual methods.
 /// interfaces are total abstraction
-/// we can not instantiate interfaces
+/// we can not instantiate interface
 
 /// Here Player is an example of interface in c++
 class Player {

@@ -54,7 +54,7 @@ int main() {
     Student s1 {"S1"};
     s1.work();
 
-    /// we point the Person class pointer to concrete class 
+    /// but we can point the Person class pointer type to concrete class 
     Person *s2 = new Student("S2");
     s2->work();
     

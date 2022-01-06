@@ -9,6 +9,9 @@ class MyString {
 
     char *str;
 
+    friend std::ostream &operator<<(std::ostream &os, const MyString &out);
+    friend std::istream &operator>>(std::istream &is, MyString &in);
+
 public:
     MyString();
     MyString(const char *);

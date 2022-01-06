@@ -35,5 +35,14 @@ int main() {
     std::cout << "Full Name : " << fullName.getString() << std::endl;
     std::cout << "Full Name string length : " << fullName.getLength() << std::endl;
 
+    /// invoking overloading stream insertion operator method
+    std::cout << fullName;
+
+    MyString inStr;
+    std::cout << "Enter your name : ";
+    std::cin >> inStr;
+    std::cout << "Your name : ";
+    std::cout << inStr << std::endl;
+
  return 0;
 }

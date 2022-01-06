@@ -70,3 +70,24 @@ MyString &MyString::operator+(const MyString &rhs) {
 
     return *temp;
 }
+
+/// overloading the stream insertion operator 
+std::ostream &operator<<(std::ostream &os, const MyString &out) {
+    os << "Operator<< Method invoked " << std::endl;
+    os << "String : " << out.getString() << " | length : " << out.getLength() << std::endl;
+    return os;
+}
+
+/// overloading the stream extraction operator 
+std::istream &operator>>(std::istream &is, MyString &in) {
+    std::cout << "Operator>> Method invoked " << std::endl;
+
+    char *buffer = new char[10000];
+    is >> buffer;
+    MyString *temp = new MyString(buffer);
+    in = *temp;
+    delete [] buffer;
+
+    return is;
+
+}
